@@ -3,7 +3,6 @@ from yannakakis.yannakakis import Yannakakis
 from yannakakis.jobdataset.JobQuery1A import JobQuery1A
 from yannakakis.jobdataset.JobQuery5C import JobQuery5C
 from yannakakis.jobdataset.JobQuery5B import JobQuery5B
-from yannakakis.jobdataset.JobQuery6E import JobQuery6E
 import logging
 import itertools
 
@@ -75,12 +74,6 @@ try:
     # Connect to the database and load the job dataset params
     db = Database()
     job = JobQuery5C()
-
-    # Load tables from the database
-    # tables = {
-    #     table_name: db.fetch_table_from_db(table_name, columns, db.connection)
-    #     for table_name, columns in job.columns.items()
-    # }
 
     # Run Yannakakis
     logger.setLevel(logging.INFO)

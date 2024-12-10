@@ -26,7 +26,7 @@ class Yannakakis():
                 edge["left_key"],
                 edge["right_key"]
             )
-            danglingTuples = len(reduced[edge["left"]]) - initialCount
+            danglingTuples = initialCount - len(reduced[edge["left"]]) 
             self.logger.info(f"BOTTOM UP :- {edge}  Dangling tuples removed :-  {danglingTuples}")
         return reduced
 
@@ -39,7 +39,7 @@ class Yannakakis():
                 edge["right_key"],
                 edge["left_key"]
             )
-            danglingTuples = len(reduced[edge["right"]]) - initialCount
+            danglingTuples = initialCount - len(reduced[edge["right"]])
             self.logger.info(f"TOP DOWN :- {edge}  Dangling tuples removed :- {danglingTuples}")
         return reduced
 
