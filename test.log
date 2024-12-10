@@ -1,0 +1,232 @@
+2024-12-09 10:23:50 - INFO - Program Started at : 1733768630.329112 seconds
+2024-12-09 10:23:50 - INFO - Time taken to Selections :-  0.616171 seconds
+2024-12-09 10:23:50 - INFO - Memory Usage After Selections - Total Memory Usage: 33067.99 KB
+2024-12-09 10:23:50 - INFO - Relation movie_info_idx: 11747.71 KB
+2024-12-09 10:23:50 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:23:50 - INFO - Relation movie_companies: 150.15 KB
+2024-12-09 10:23:50 - INFO - Relation info_type: 0.09 KB
+2024-12-09 10:23:50 - INFO - Relation title: 21169.96 KB
+2024-12-09 10:23:50 - INFO - Time taken to calculate join order :-  0.000000 seconds
+2024-12-09 10:23:51 - INFO - BOTTOM UP :- {'left': 'movie_info_idx', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :-  -1379785
+2024-12-09 10:23:51 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'movie_info_idx', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -17793
+2024-12-09 10:23:51 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_info_idx', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -2528062
+2024-12-09 10:23:51 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:23:51 - INFO - BOTTOM UP :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :-  0
+2024-12-09 10:23:51 - INFO - Time taken to calculate perform bottom up semi join :-  0.611187 seconds
+2024-12-09 10:23:51 - INFO - Memory Usage After Bottom-Up Semi-Join - Total Memory Usage: 4.71 KB
+2024-12-09 10:23:51 - INFO - Relation movie_info_idx: 2.15 KB
+2024-12-09 10:23:51 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:23:51 - INFO - Relation movie_companies: 0.24 KB
+2024-12-09 10:23:51 - INFO - Relation info_type: 0.09 KB
+2024-12-09 10:23:51 - INFO - Relation title: 2.15 KB
+2024-12-09 10:23:51 - INFO - TOP DOWN :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :- 0
+2024-12-09 10:23:51 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :- -242
+2024-12-09 10:23:51 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_info_idx', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- -242
+2024-12-09 10:23:51 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'movie_info_idx', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:23:51 - INFO - TOP DOWN :- {'left': 'movie_info_idx', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :- 0
+2024-12-09 10:23:51 - INFO - Time taken to calculate perform top down semi join :-  0.035101 seconds
+2024-12-09 10:23:51 - INFO - Memory Usage After Top-Down Semi-Join - Total Memory Usage: 0.65 KB
+2024-12-09 10:23:51 - INFO - Relation movie_info_idx: 0.12 KB
+2024-12-09 10:23:51 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:23:51 - INFO - Relation movie_companies: 0.24 KB
+2024-12-09 10:23:51 - INFO - Relation info_type: 0.09 KB
+2024-12-09 10:23:51 - INFO - Relation title: 0.12 KB
+2024-12-09 10:23:51 - INFO - Time taken to calculate perform join phase :-  0.000000 seconds
+2024-12-09 10:23:51 - INFO - Final Result - Memory Usage (Before Projection): 0.24 KB
+2024-12-09 10:23:51 - INFO - Time taken to perform projections :-  0.000000 seconds
+2024-12-09 10:23:51 - INFO - Overall time taken by Yannakakis algirithm :-  1.263460 seconds
+2024-12-09 10:23:51 - INFO - Program ends at : 1733768631.592571 seconds
+2024-12-09 10:23:51 - INFO - Final Result - Memory Usage (After Projection): 0.24 KB
+2024-12-09 10:23:51 - INFO - Length of Final Join : 23
+
+
+
+2024-12-09 10:24:54 - INFO - Program Started at : 1733768694.396168 seconds
+2024-12-09 10:24:55 - INFO - Time taken to Selections :-  0.765216 seconds
+2024-12-09 10:24:55 - INFO - Memory Usage After Selections - Total Memory Usage: 148269.71 KB
+2024-12-09 10:24:55 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:24:55 - INFO - Relation info_type: 1.05 KB
+2024-12-09 10:24:55 - INFO - Relation movie_companies: 21169.96 KB
+2024-12-09 10:24:55 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 10:24:55 - INFO - Relation title: 3215.49 KB
+2024-12-09 10:24:55 - INFO - Time taken to calculate join order :-  0.000000 seconds
+2024-12-09 10:24:56 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:24:56 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'company_type', 'left_key': 'company_type_id', 'right_key': 'id'}  Dangling tuples removed :-  -1274246
+2024-12-09 10:24:57 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -7239
+2024-12-09 10:24:57 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -274338
+2024-12-09 10:24:58 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:24:58 - INFO - Time taken to calculate perform bottom up semi join :-  2.857027 seconds
+2024-12-09 10:24:58 - INFO - Memory Usage After Bottom-Up Semi-Join - Total Memory Usage: 135316.68 KB
+2024-12-09 10:24:58 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:24:58 - INFO - Relation info_type: 1.05 KB
+2024-12-09 10:24:58 - INFO - Relation movie_companies: 10442.37 KB
+2024-12-09 10:24:58 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 10:24:58 - INFO - Relation title: 990.05 KB
+2024-12-09 10:24:59 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- -13877876
+2024-12-09 10:24:59 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- -1151466
+2024-12-09 10:24:59 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:24:59 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'company_type', 'left_key': 'company_type_id', 'right_key': 'id'}  Dangling tuples removed :- 0
+2024-12-09 10:24:59 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :- -77
+2024-12-09 10:24:59 - INFO - Time taken to calculate perform top down semi join :-  1.671927 seconds
+2024-12-09 10:24:59 - INFO - Memory Usage After Top-Down Semi-Join - Total Memory Usage: 10650.96 KB
+2024-12-09 10:24:59 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:24:59 - INFO - Relation info_type: 0.37 KB
+2024-12-09 10:24:59 - INFO - Relation movie_companies: 1409.74 KB
+2024-12-09 10:24:59 - INFO - Relation movie_info: 8250.71 KB
+2024-12-09 10:24:59 - INFO - Relation title: 990.05 KB
+2024-12-09 10:25:02 - INFO - Time taken to calculate perform join phase :-  2.362445 seconds
+2024-12-09 10:25:02 - INFO - Final Result - Memory Usage (Before Projection): 1409.74 KB
+2024-12-09 10:25:02 - INFO - Time taken to perform projections :-  0.000000 seconds
+2024-12-09 10:25:02 - INFO - Overall time taken by Yannakakis algirithm :-  7.656614 seconds
+2024-12-09 10:25:02 - INFO - Program ends at : 1733768702.052783 seconds
+2024-12-09 10:25:02 - INFO - Final Result - Memory Usage (After Projection): 1409.74 KB
+2024-12-09 10:25:02 - INFO - Length of Final Join : 168285
+
+
+
+2024-12-09 10:27:08 - INFO - Program Started at : 1733768828.484230 seconds
+2024-12-09 10:27:10 - INFO - Time taken to Selections :-  1.545474 seconds
+2024-12-09 10:27:10 - INFO - Memory Usage After Selections - Total Memory Usage: 141293.12 KB
+2024-12-09 10:27:10 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:27:10 - INFO - Relation info_type: 1.05 KB
+2024-12-09 10:27:10 - INFO - Relation movie_companies: 2540.59 KB
+2024-12-09 10:27:10 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 10:27:10 - INFO - Relation title: 14868.27 KB
+2024-12-09 10:27:10 - INFO - Time taken to calculate join order :-  0.000000 seconds
+2024-12-09 10:27:10 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:27:11 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -349
+2024-12-09 10:27:12 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -2455
+2024-12-09 10:27:12 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :-  -189781
+2024-12-09 10:27:12 - INFO - BOTTOM UP :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :-  0
+2024-12-09 10:27:12 - INFO - Time taken to calculate perform bottom up semi join :-  2.479384 seconds
+2024-12-09 10:27:12 - INFO - Memory Usage After Bottom-Up Semi-Join - Total Memory Usage: 139632.55 KB
+2024-12-09 10:27:12 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:27:12 - INFO - Relation info_type: 1.05 KB
+2024-12-09 10:27:12 - INFO - Relation movie_companies: 880.02 KB
+2024-12-09 10:27:12 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 10:27:12 - INFO - Relation title: 14868.27 KB
+2024-12-09 10:27:12 - INFO - TOP DOWN :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :- -104731
+2024-12-09 10:27:12 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :- -1745825
+2024-12-09 10:27:14 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- -14827526
+2024-12-09 10:27:14 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:27:14 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :- -81
+2024-12-09 10:27:14 - INFO - Time taken to calculate perform top down semi join :-  1.509997 seconds
+2024-12-09 10:27:14 - INFO - Memory Usage After Top-Down Semi-Join - Total Memory Usage: 78.80 KB
+2024-12-09 10:27:14 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:27:14 - INFO - Relation info_type: 0.30 KB
+2024-12-09 10:27:14 - INFO - Relation movie_companies: 6.77 KB
+2024-12-09 10:27:14 - INFO - Relation movie_info: 65.65 KB
+2024-12-09 10:27:14 - INFO - Relation title: 5.99 KB
+2024-12-09 10:27:14 - INFO - Time taken to calculate perform join phase :-  0.024019 seconds
+2024-12-09 10:27:14 - INFO - Final Result - Memory Usage (Before Projection): 65.65 KB
+2024-12-09 10:27:14 - INFO - Time taken to perform projections :-  0.000000 seconds
+2024-12-09 10:27:14 - INFO - Overall time taken by Yannakakis algirithm :-  5.559874 seconds
+2024-12-09 10:27:14 - INFO - Program ends at : 1733768834.044104 seconds
+2024-12-09 10:27:14 - INFO - Final Result - Memory Usage (After Projection): 65.65 KB
+2024-12-09 10:27:14 - INFO - Length of Final Join : 8390
+
+
+2024-12-09 10:37:59 - INFO - Program Started at : 1733769479.639950 seconds
+2024-12-09 10:38:04 - INFO - Time taken to Selections :-  4.679673 seconds
+2024-12-09 10:38:04 - INFO - Memory Usage After Selections - Total Memory Usage: 47916.21 KB
+2024-12-09 10:38:04 - INFO - Relation aka_title: 2858.18 KB
+2024-12-09 10:38:04 - INFO - Relation company_name: 0.09 KB
+2024-12-09 10:38:04 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:38:04 - INFO - Relation info_type: 0.09 KB
+2024-12-09 10:38:04 - INFO - Relation keyword: 1113.84 KB
+2024-12-09 10:38:04 - INFO - Relation movie_companies: 0.09 KB
+2024-12-09 10:38:04 - INFO - Relation movie_info: 0.05 KB
+2024-12-09 10:38:04 - INFO - Relation movie_keyword: 38149.15 KB
+2024-12-09 10:38:04 - INFO - Relation title: 5794.65 KB
+2024-12-09 10:38:04 - INFO - Time taken to calculate join order :-  0.000000 seconds
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'company_type', 'left_key': 'company_type_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'company_name', 'left_key': 'company_id', 'right_key': 'id'}  Dangling tuples removed :-  -2
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_keyword', 'right': 'keyword', 'left_key': 'keyword_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:04 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'movie_companies', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'movie_keyword', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -2235019
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'movie_keyword', 'right': 'movie_companies', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -2288911
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'movie_keyword', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -716259
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_keyword', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:05 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'aka_title', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  0
+2024-12-09 10:38:05 - INFO - Time taken to calculate perform bottom up semi join :-  1.546816 seconds
+2024-12-09 10:38:05 - INFO - Memory Usage After Bottom-Up Semi-Join - Total Memory Usage: 3972.49 KB
+2024-12-09 10:38:05 - INFO - Relation aka_title: 2858.18 KB
+2024-12-09 10:38:05 - INFO - Relation company_name: 0.09 KB
+2024-12-09 10:38:05 - INFO - Relation company_type: 0.09 KB
+2024-12-09 10:38:05 - INFO - Relation info_type: 0.09 KB
+2024-12-09 10:38:05 - INFO - Relation keyword: 1113.84 KB
+2024-12-09 10:38:05 - INFO - Relation movie_companies: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation movie_info: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation movie_keyword: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation title: 0.05 KB
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'title', 'right': 'aka_title', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- -361472
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_keyword', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_keyword', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_keyword', 'right': 'movie_companies', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_keyword', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'movie_companies', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'aka_title', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_keyword', 'right': 'keyword', 'left_key': 'keyword_id', 'right_key': 'id'}  Dangling tuples removed :- -134170
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :- -1
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'company_name', 'left_key': 'company_id', 'right_key': 'id'}  Dangling tuples removed :- -1
+2024-12-09 10:38:05 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'company_type', 'left_key': 'company_type_id', 'right_key': 'id'}  Dangling tuples removed :- -4
+2024-12-09 10:38:05 - INFO - Time taken to calculate perform top down semi join :-  0.082553 seconds
+2024-12-09 10:38:05 - INFO - Memory Usage After Top-Down Semi-Join - Total Memory Usage: 0.49 KB
+2024-12-09 10:38:05 - INFO - Relation aka_title: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation company_name: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation company_type: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation info_type: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation keyword: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation movie_companies: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation movie_info: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation movie_keyword: 0.05 KB
+2024-12-09 10:38:05 - INFO - Relation title: 0.05 KB
+2024-12-09 10:38:05 - ERROR - Error occurred :  list index out of range
+2024-12-09 13:39:46 - INFO - Program Started at : 1733780386.896561 seconds
+2024-12-09 13:39:57 - INFO - Time taken to Selections :-  10.513263 seconds
+2024-12-09 13:39:57 - INFO - Memory Usage After Selections - Total Memory Usage: 141293.12 KB
+2024-12-09 13:39:57 - INFO - Relation company_type: 0.09 KB
+2024-12-09 13:39:57 - INFO - Relation info_type: 1.05 KB
+2024-12-09 13:39:57 - INFO - Relation movie_companies: 2540.59 KB
+2024-12-09 13:39:57 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 13:39:57 - INFO - Relation title: 14868.27 KB
+2024-12-09 13:39:57 - INFO - Time taken to calculate join order :-  0.001989 seconds
+2024-12-09 13:40:01 - INFO - BOTTOM UP :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :-  0
+2024-12-09 13:40:02 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :-  -190127
+2024-12-09 13:40:07 - INFO - BOTTOM UP :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -2455
+2024-12-09 13:40:07 - INFO - BOTTOM UP :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :-  0
+2024-12-09 13:40:10 - INFO - BOTTOM UP :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :-  -3
+2024-12-09 13:40:10 - INFO - Time taken to calculate perform bottom up semi join :-  13.254313 seconds
+2024-12-09 13:40:10 - INFO - Memory Usage After Bottom-Up Semi-Join - Total Memory Usage: 139632.55 KB
+2024-12-09 13:40:10 - INFO - Relation company_type: 0.09 KB
+2024-12-09 13:40:10 - INFO - Relation info_type: 1.05 KB
+2024-12-09 13:40:10 - INFO - Relation movie_companies: 880.02 KB
+2024-12-09 13:40:10 - INFO - Relation movie_info: 123883.12 KB
+2024-12-09 13:40:10 - INFO - Relation title: 14868.27 KB
+2024-12-09 13:40:15 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'movie_info', 'left_key': 'movie_id', 'right_key': 'movie_id'}  Dangling tuples removed :- -12750555
+2024-12-09 13:40:15 - INFO - TOP DOWN :- {'left': 'company_type', 'right': 'movie_companies', 'left_key': 'id', 'right_key': 'company_type_id'}  Dangling tuples removed :- -104731
+2024-12-09 13:40:17 - INFO - TOP DOWN :- {'left': 'title', 'right': 'movie_info', 'left_key': 'id', 'right_key': 'movie_id'}  Dangling tuples removed :- 0
+2024-12-09 13:40:18 - INFO - TOP DOWN :- {'left': 'movie_companies', 'right': 'title', 'left_key': 'movie_id', 'right_key': 'id'}  Dangling tuples removed :- -1745825
+2024-12-09 13:40:18 - INFO - TOP DOWN :- {'left': 'movie_info', 'right': 'info_type', 'left_key': 'info_type_id', 'right_key': 'id'}  Dangling tuples removed :- -42
+2024-12-09 13:40:18 - INFO - Time taken to calculate perform top down semi join :-  7.887649 seconds
+2024-12-09 13:40:18 - INFO - Memory Usage After Top-Down Semi-Join - Total Memory Usage: 16740.34 KB
+2024-12-09 13:40:18 - INFO - Relation company_type: 0.09 KB
+2024-12-09 13:40:18 - INFO - Relation info_type: 0.65 KB
+2024-12-09 13:40:18 - INFO - Relation movie_companies: 6.77 KB
+2024-12-09 13:40:18 - INFO - Relation movie_info: 16726.84 KB
+2024-12-09 13:40:18 - INFO - Relation title: 5.99 KB
+2024-12-09 13:40:19 - INFO - Time taken to calculate perform join phase :-  1.143030 seconds
+2024-12-09 13:40:19 - INFO - Final Result - Memory Usage (Before Projection): 65.65 KB
+2024-12-09 13:40:19 - INFO - Time taken to perform projections :-  0.000000 seconds
+2024-12-09 13:40:19 - INFO - Overall time taken by Yannakakis algirithm :-  32.801249 seconds
+2024-12-09 13:40:19 - INFO - Program ends at : 1733780419.697810 seconds
+2024-12-09 13:40:19 - INFO - Final Result - Memory Usage (After Projection): 65.65 KB
+2024-12-09 13:40:19 - INFO - Length of Final Join : 8194
